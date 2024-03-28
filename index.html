@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas UTS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="bj-nav">
+        <div class="logo">Bintang Jagad</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="fp-nav">
+        <div class="logo">Bintang Jagad</div>
+        <div class="bj-fp">
+            <div class="bj-icon" onclick="toggleUts()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="bj-links">
+                <li><a href="#home" onclick="toggleUts()">Home</a></li>
+                <li><a href="#about" onclick="toggleUts()">About</a></li>
+                <li><a href="#contact" onclick="toggleUts()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="pic-profile">
+            <img src="fp.png" class="pic">
+        </div>
+        <div class="intro-profile">
+            <p class="text-1">Hello I'm</p>
+            <h1 class="judul">Bintang Jagad</h1>
+            <p class="text-2">Front End Developer</p>
+            <div class="btn-container">
+                <button class="btn-color-2" onclick="window.open('./cv.pdf')">Download CV</button>
+                <button class="btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="sosial-container">
+                <img src="linkedin.png" class="icon" onclick="location.href='https://www.linkedin.com/'">
+                <img src="github.png" class="icon" onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="intro-profile">Perkenalan</p>
+        <h1 class="judul">About Me</h1>
+        <div class="section-container">
+            <div class="pic-container">
+                <img src="picabout.png" class="pic-about">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="experience.png" class="item">
+                        <h3>Pengalaman</h3>
+                        <p>1+ <br> Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="education.png" class="item">
+                        <h3>Pendidikan</h3>
+                        <p>SMK <br> 2022</p>
+                    </div>
+                </div>
+                <div class="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium
+                    repudiandae dolorem sapiente nisi ut temporibus doloribus nesciunt aspernatur? Eius ab accusantium
+                    consequuntur libero saepe dolores dolorem est, quibusdam tenetur.</div>
+            </div>
+        </div>
+        <img src="arrow.png" class="item arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <footer>
+        <div id="contact">
+            <p class="intro-profile">Tak Kenal Maka Tak Sayang</p>
+            <h1 class="judul">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="email.png" class="icon">
+                </div>
+                <p><a href="mailto:examplemail@gmail.com">nakbintangjagad@gmail.com</a></p>
+                <div class="contact-info-container">
+                    <img src="linkedin.png" class="icon">
+                </div>
+                <p><a href="https://www.linkedin.com">Linkedin</a></p>
+                <div class="contact-info-container">
+                    <img src="wa.png" class="icon">
+                </div>
+                <p><a href="https://web.whatsapp.com/">088233441310</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
